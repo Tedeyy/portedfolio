@@ -1,0 +1,47 @@
+/* Base Styles */
+:root {
+    --black: #000000;
+    --dark-grey: #333333;
+    --grey: #666666;
+    --light-grey: #e0e0e0;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-grey);
+    background-color: var(--white);
+}
+
+/* Basic Layout */
+main {
+    margin-top: 60px; /* Space for fixed header */
+}
+
+.section {
+    padding: 5rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+/* Responsive Base */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 5%;
+    }
+}
