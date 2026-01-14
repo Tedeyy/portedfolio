@@ -210,6 +210,25 @@ nav {
     background-color: var(--text-secondary);
 }
 
+.cta-button.secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Mobile Navigation */
 .hamburger {
     display: none;
