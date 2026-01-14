@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Add fade-in animation to elements
     const fadeElements = [
-        { selector: '.hero-content', delay: 0 },
-        { selector: '.aboutme-content', delay: 0.2 },
-        { selector: '.project-card', delay: 0.4 },
-        { selector: '.skills-card', delay: 0.6 },
-        { selector: '.contact-form', delay: 0.8 },
-        { selector: '.contact-card', delay: 1.0 }
+        { selector: '.profile-image', delay: 0 },
+        { selector: '.hero-content h1', delay: 0.2 },
+        { selector: '.hero-content .subtitle', delay: 0.4 },
+        { selector: '.hero-content .cta-button', delay: 0.6 },
+        { selector: '.aboutme-content', delay: 0.8 },
+        { selector: '.project-card', delay: 1.0 },
+        { selector: '.skills-card', delay: 1.2 },
+        { selector: '.contact-form', delay: 1.4 },
+        { selector: '.contact-card', delay: 1.6 }
     ];
 
     fadeElements.forEach(({ selector, delay }) => {
