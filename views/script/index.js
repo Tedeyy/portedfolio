@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Add fade-in animation to elements
+    const fadeElements = [
+        { selector: '.hero-content', delay: 0 },
+        { selector: '.aboutme-content', delay: 0.2 },
+        { selector: '.project-card', delay: 0.4 },
+        { selector: '.skills-card', delay: 0.6 },
+        { selector: '.contact-form', delay: 0.8 },
+        { selector: '.contact-card', delay: 1.0 }
+    ];
+
+    fadeElements.forEach(({ selector, delay }) => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach((element, index) => {
+            element.classList.add('fade-in');
+            element.style.animationDelay = `${delay + (index * 0.1)}s`;
+        });
+    });
+
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
